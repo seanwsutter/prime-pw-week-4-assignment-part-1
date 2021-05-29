@@ -23,8 +23,7 @@ END NOTES */
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-} // Call the function to test
-console.log(hello());
+} console.log(hello()); // Call the function to test 
 /* QUESTION - I was a little caught up on the wording for this question. Which one is correct?
 
   // 1. Function to return 'Hello World!'
@@ -37,33 +36,37 @@ END QUESTION */
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName(name) { // function is called 'helloName', '(name)' is a parameter
+function helloNameIs(name) { // function is called 'helloName', '(name)' is a parameter
   return 'Hello! My name is ' + name; // function says to return the text, 'Hello,' plus the parameter (defined when we call the funcgtion)
 } // Calling the function to test and assinging different values to the '(name)' parameter
-console.log('testing function, helloName..');
-// console.log(`Testing function helloName... ${helloName()}`);
-console.log(helloName('Jo'));
-helloName('Stacy');
-/*
-// 2. Function to return an personalized hello, using the `name` argument.
-//    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName( name ) { // function is called 'helloName', '( name )' is a parameter
-  return console.log('Hello,', name);
-}
-// Remember to call the function to test
-console.log(helloName(Jo));
-*/
-// 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
-}
+console.log('testing function, helloName...');
+console.log(helloNameIs('John'));
+console.log(helloNameIs('Jacob'));
+console.log(helloNameIs('Jingleheimer Schmidt'));
+// ALTERNATIVE ANSWER
+function helloMyName(name) {
+  return console.log('Hello! My name is ' + name);
+} console.log('testing function, helloMyName...');
+helloMyName('Sean Sutter');
 
+// 3. Function to add two numbers together & return the result
+function addNumbers( firstNumber, secondNumber ) { // funtion - addNumbers, parameters - firstNumber and secondNumber
+   return firstNumber + secondNumber; // return the result of firstNumber + secondNumber
+} console.log('testing function, addNumbers...');
+console.log('8340 + 659 = ', addNumbers(8340,659));
+// ALTERNATIVE FUNCTION with result variable
+function resultNumber (firstNumber, secondNumber ) {
+  let result = firstNumber + secondNumber
+   return console.log(result);
+} console.log('testing function, resultNumber...' );
+console.log('firstNumber + secondNumber = ');
+resultNumber(4527,4474);
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
-}
-
+function multiplyThree(a, b, c) {
+  return a * b * c;
+} console.log('testing function, multiplyThree...');
+console.log('3 * 100 * 30 = ', multiplyThree(3, 100, 30));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
