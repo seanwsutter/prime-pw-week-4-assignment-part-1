@@ -3,7 +3,7 @@ console.log('***** Function Practice *****')
 * A function is a sequence of statements values can be passed to a function, and the function will return a value.
 * When JavaScript reaches a 'return' statement, the function will stop executing.
 
-function square(number) { 
+function square(number) {
   return number * number;
 }
 
@@ -14,17 +14,7 @@ function square(number) {
 * defining a function DOES NOT execute it, it must be called,
     example.)    square(5);
 * calls the function with an argument of 5, the function executes its statements and returns the value 25
-
-
-
-
-
-
-
-
-
-
-*/
+END NOTES */
 
 // Add the required code to complete the functions below
 // After _each_ function, use a console log to call the function
@@ -33,19 +23,36 @@ function square(number) {
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-}
-// Call the function to test
-console.log('Test - should say "Hello World!"', hello());
+} // Call the function to test
+console.log(hello());
+/* QUESTION - I was a little caught up on the wording for this question. Which one is correct?
 
+  // 1. Function to return 'Hello World!'
+  function hello() {
+    return console.log('Hello World!');
+  } // Call the function to test
+  hello();
+
+END QUESTION */
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName( name ) {
-  return;
+function helloName(name) { // function is called 'helloName', '(name)' is a parameter
+  return 'Hello! My name is ' + name; // function says to return the text, 'Hello,' plus the parameter (defined when we call the funcgtion)
+} // Calling the function to test and assinging different values to the '(name)' parameter
+console.log('testing function, helloName..');
+// console.log(`Testing function helloName... ${helloName()}`);
+console.log(helloName('Jo'));
+helloName('Stacy');
+/*
+// 2. Function to return an personalized hello, using the `name` argument.
+//    for example 'Hello, Jo!', or 'Hello, Stacy!'
+function helloName( name ) { // function is called 'helloName', '( name )' is a parameter
+  return console.log('Hello,', name);
 }
 // Remember to call the function to test
-
-
+console.log(helloName(Jo));
+*/
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
   // return firstNumber + secondNumber;
