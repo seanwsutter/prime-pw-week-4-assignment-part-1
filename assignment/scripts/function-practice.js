@@ -23,7 +23,7 @@ END NOTES */
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-} console.log(hello()); // Call the function to test 
+} console.log(hello()); // Call the function to test
 /* QUESTION - I was a little caught up on the wording for this question. Which one is correct?
 
   // 1. Function to return 'Hello World!'
@@ -46,19 +46,19 @@ console.log(helloNameIs('Jingleheimer Schmidt'));
 // ALTERNATIVE ANSWER
 function helloMyName(name) {
   return console.log('Hello! My name is ' + name);
-} console.log('testing function, helloMyName...');
+} console.log('testing function, helloMyName..');
 helloMyName('Sean Sutter');
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) { // funtion - addNumbers, parameters - firstNumber and secondNumber
    return firstNumber + secondNumber; // return the result of firstNumber + secondNumber
-} console.log('testing function, addNumbers...');
+} console.log('testing function, addNumbers..');
 console.log('8340 + 659 = ', addNumbers(8340,659));
 // ALTERNATIVE FUNCTION with result variable
 function resultNumber (firstNumber, secondNumber ) {
   let result = firstNumber + secondNumber
    return console.log(result);
-} console.log('testing function, resultNumber...' );
+} console.log('testing function, resultNumber..' );
 console.log('firstNumber + secondNumber = ');
 resultNumber(4527,4474);
 
@@ -70,24 +70,33 @@ console.log('3 * 100 * 30 = ', multiplyThree(3, 100, 30));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
-function isPositive( number ) {
-  if ( number > 0 ){
-    return;
-  }
-    return;
-}
-// Call the function to test each outcome (true & false)
+function isPositive(number) {
+  if(number > 0) {
+    return true;
+  } else
+    return false;
+} // Call the function to test each outcome (true & false)
+console.log('testing function isPositive...');
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
-
+console.log( 'isPositive - should say true..', isPositive(3) );
+console.log( 'isPositive - should say false..', isPositive(0) );
+console.log( 'isPositive - should say false..', isPositive(-3) );
+console.log('is the number 10 positive..', isPositive(10));
+console.log('is his power level over 9000?', isPositive(9000-9001));
 
 // 6. Function to return the _last_ item in an array. If the
-//    array is empty, return `undefined`.
-function getLast( array ) {
+//    array is empt2, return `undefined`.
+let pocketThings = ['Wallet', 'Keys', 'Phone']
+function getLast(array) {
+ return console.log(array[array.length - 1]);
+} console.log('last item in pocketThings array..');
+getLast(pocketThings);
 
-}
+function getLastIndex(array) {
+return console.log(array.length - 1);
+} console.log('index[i] of last item in pocketThings array..');
+getLastIndex(pocketThings);
+
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
