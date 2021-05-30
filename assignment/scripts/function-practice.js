@@ -25,19 +25,17 @@ function hello() {
   return 'Hello World!';
 } console.log(hello()); // Call the function to test
 /* QUESTION - I was a little caught up on the wording for this question. Which one is correct?
-
-  // 1. Function to return 'Hello World!'
+// 1. Function to return 'Hello World!'
   function hello() {
     return console.log('Hello World!');
   } // Call the function to test
   hello();
-
-END QUESTION */
-
+  */
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloNameIs(name) { // function is called 'helloName', '(name)' is a parameter
-  return 'Hello! My name is ' + name; // function says to return the text, 'Hello,' plus the parameter (defined when we call the funcgtion)
+  return 'Hello! My name is ' + name; // function says to return the text, 'Hello,' plus the parameter
+  // (defined when we call the funcgtion)
 } // Calling the function to test and assinging different values to the '(name)' parameter
 console.log('testing function, helloName...');
 console.log(helloNameIs('John'));
@@ -84,18 +82,14 @@ console.log( 'isPositive - should say false..', isPositive(-3) );
 console.log('is the number 10 positive..', isPositive(10));
 console.log('is his power level over 9000?', isPositive(9000-9001));
 
+/* I orignally did #6 and #7 wrong, because i defined an array before the function - SEE OLD COMMITS */
+
 // 6. Function to return the _last_ item in an array. If the
 //    array is empt2, return `undefined`.
-let pocketThings = ['Wallet', 'Keys', 'Phone']
 function getLast(array) {
  return console.log(array[array.length - 1]);
-} console.log('last item in pocketThings array..');
-getLast(pocketThings);
-
-function getLastIndex(array) {
-return console.log(array.length - 1);
-} console.log('index[i] of last item in pocketThings array..');
-getLastIndex(pocketThings);
+} console.log('last item in array..');
+getLast(['Chicken', 'Steak', 'Eggs', 'Pork']);
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
@@ -108,20 +102,8 @@ function findValue(value, array) {
   return false;
 } // end for loop
 console.log('testing function, findValue...');
-console.log('is Wallet in pocketThings array', findValue('Wallet', pocketThings));
-console.log('is Chapstick in pocketThings array', findValue('Chapstick', pocketThings));
-/* TESTING STUFF
-// function findValue(value, array) {
-    for(let value of array) {
-      return true;
-      }
-  } console.log(findValue('Wallet', pocketThings));
-// function findValue(value, array) {
-    for(let value of array) {
-      return console.log(true);
-      }
-    } findValue('Wallet', pocketThings)
-*/
+console.log('is Steak in array', findValue('Steak',['Chicken', 'Steak', 'Eggs', 'Pork']));
+console.log('is Fish in array', findValue('Fish',['Chicken', 'Steak', 'Eggs', 'Pork']));
 
 // ----------------------
 // Stretch Goals
