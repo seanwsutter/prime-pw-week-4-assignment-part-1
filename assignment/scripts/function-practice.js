@@ -134,28 +134,50 @@ console.log('sum total should be: 0', sumAll(10,-9,10,-9));
 //     numbers contained in an input array.  If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-function checkPos(array) {
+/* Spent way too long playing around with this one before I decided to look it up.
+Leaving some notes here and will come back to this one.
+
+// ARRAY METHODS
+  - filter()	Creates a new array with every element in an array that pass a test
+  - find()	Returns the value of the first element in an array that pass a test
+  - findIndex()	Returns the index of the first element in an array that pass a test
+  - forEach()	Calls a function for each array element
+
+// ATTEMPT
+let newArray = [];
+    for (let i=0; i<array.length; i++) {
+      if (array[i]>0) {
+    } newArray =+ array[i];
+  } return newArray;
+
+} // console.log('testing function checkPositive..');
+console.log('checking positive numbers in array', checkPositive([-666,1000,-54,-3,1,34556437, 99]));
+
+//  ATTEMPT
+function isPos(array) {
+  let n=0;
+  let newArray=[];
+  while (array>0) {
+    console.log(array[i]);
+    if (array[i] > 0) {
+      continue;
+    }
+  } n += arrary[i];
+  console.log('are positive', n);
+} console.log('testing function, isPos..');
+console.log(isPos([0,5435,2222,-888,2222,-33333]));
+
+// ATTEMPT
+function checkPositive(array) {
   let newArray = [];
   for (let i=0; i<array.length; i++) {
   if (array[i]>0) {
-  newArray = [array[i]];
-} console.log(newArray);
-}} console.log('testing function, checkPos...');
-console.log(checkPos([0,-3,-2,8,5,-5,10]));
-
-
-/* TEST
-function checkPositive(array) {
-  let newArray = [];
-  for (let newArray of array) {
-    if (array[i]>0) {
-      ;
-    }
-  }
-}
-console.log(checkPositive([0,-3,-2,8,5,9]));
-console.log(newArray);
+     newArray.push()
+}  console.log(newArray);
+}} // console.log('testing function, checkPositive...');
+console.log('Should show only positive numbers', checkPositive([53,-326,0,-3434,8888,-35]));
 */
+
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
