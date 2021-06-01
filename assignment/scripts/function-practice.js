@@ -44,26 +44,26 @@ console.log(helloNameIs('Jingleheimer Schmidt'));
 // ALTERNATIVE ANSWER
 function helloMyName(name) {
   return console.log('Hello! My name is ' + name);
-} console.log('testing function, helloMyName..');
+} // console.log('testing function, helloName..');
 helloMyName('Sean Sutter');
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) { // funtion - addNumbers, parameters - firstNumber and secondNumber
    return firstNumber + secondNumber; // return the result of firstNumber + secondNumber
-} console.log('testing function, addNumbers..');
+} // console.log('testing function, addNumbers..');
 console.log('8340 + 659 = ', addNumbers(8340,659));
 // ALTERNATIVE FUNCTION with result variable
 function resultNumber (firstNumber, secondNumber ) {
   let result = firstNumber + secondNumber
    return console.log(result);
-} console.log('testing function, resultNumber..' );
+} // console.log('testing function, resultNumber..' );
 console.log('firstNumber + secondNumber = ');
 resultNumber(4527,4474);
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(a, b, c) {
   return a * b * c;
-} console.log('testing function, multiplyThree...');
+} // console.log('testing function, multiplyThree...');
 console.log('3 * 100 * 30 = ', multiplyThree(3, 100, 30));
 
 // 5. Function that will return true if a number is positive,
@@ -74,7 +74,7 @@ function isPositive(number) {
   } else
     return false;
 } // Call the function to test each outcome (true & false)
-console.log('testing function isPositive...');
+// console.log('testing function isPositive...');
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true..', isPositive(3) );
 console.log( 'isPositive - should say false..', isPositive(0) );
@@ -88,7 +88,7 @@ console.log('is his power level over 9000?', isPositive(9000-9001));
 //    array is empt2, return `undefined`.
 function getLast(array) {
  return console.log(array[array.length - 1]);
-} console.log('last item in array..');
+} // console.log('last item in array..');
 getLast(['Chicken', 'Steak', 'Eggs', 'Pork']);
 
 // 7. Function to find a value in an array. Return true if the
@@ -101,7 +101,7 @@ function findValue(value, array) {
   } // end if statement
   return false;
 } // end for loop
-console.log('testing function, findValue...');
+// console.log('testing function, findValue...');
 console.log('is Steak in array', findValue('Steak',['Chicken', 'Steak', 'Eggs', 'Pork']));
 console.log('is Fish in array', findValue('Fish',['Chicken', 'Steak', 'Eggs', 'Pork']));
 
