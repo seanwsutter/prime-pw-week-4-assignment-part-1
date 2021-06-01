@@ -131,10 +131,31 @@ function sumAll(array) {
 console.log('sum total should be: 4', sumAll([1,1,1,1])); // typed SumALL by mistake and took me forever
 console.log('sum total should be: 0', sumAll(10,-9,10,-9));
 // 10. Function to return a new array of all positive (greater than zero)
-//     numbers contained in an input array. If there are no positive numbers
+//     numbers contained in an input array.  If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+function checkPos(array) {
+  let newArray = [];
+  for (let i=0; i<array.length; i++) {
+  if (array[i]>0) {
+  newArray = [array[i]];
+} console.log(newArray);
+}} console.log('testing function, checkPos...');
+console.log(checkPos([0,-3,-2,8,5,-5,10]));
 
+
+/* TEST
+function checkPositive(array) {
+  let newArray = [];
+  for (let newArray of array) {
+    if (array[i]>0) {
+      ;
+    }
+  }
+}
+console.log(checkPositive([0,-3,-2,8,5,9]));
+console.log(newArray);
+*/
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
